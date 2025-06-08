@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.contentCard{
+    height: 38rem;
+    width: 25rem;
+    background-color: #e5e9ed;
+    border-radius: 20px;
+    box-shadow: 3px 3px 50px black;
+    display: flex;
+    flex-direction: column ;
+    gap: 2.7rem;
+}
+
+.headerImg{
+    height: 12rem;
+}
+
+.headerImg img{
+    height: 100%;
+    width: 100%;                
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
+}
+
+.mainContentBox1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.mainContentBox1 p{
+    text-align: center;
+    text-align-last: center;
+    width: 70%;
+    font-weight:600;
+}
+
+.mainContentBox1 h2{
+    font-weight: bolder;
+}
+
+.mainContentBox2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainContentSubBox2{
+    height: 3.8rem;
+    width: 80%; 
+    background-image: linear-gradient(120deg, #c6da9d 0%, #94ce9b 100%);
+    border-radius: 15px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.maincontentSubBox2Img img{
+    height: 2.7rem;
+    width: 2.7rem;
+    border-radius: 10px;
+}
+
+.maincontentSubBox2PlanPrice{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.maincontentSubBox2ChangeLink{
+    font-size: larger;
+}
+
+.mainContentBox3Button{
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.mainContentBox3Button button{
+    height: 3.8rem;
+    width: 80%; 
+    border-radius: 15px;
+    background-color: rgba(104, 104, 218, 0.571);
+    color: white;
+    font-size:medium;
+    box-shadow: 2px 2px 10px black;
+}
+
+.mainContentBox4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContentBox4 a{
+    text-decoration: none;
+    font-weight:700;
+    font-size: large;
+    color: black;
+}
+
+#mainContentSubBox2{
+    @media(max-width: 400px){
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* .maincontentSubBox2ChangeLink{
+    @media(max-width: 400px){
+
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+} */
